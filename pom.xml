@@ -21,6 +21,11 @@
     <developers>
         <developer/>
     </developers>
+    <modules>
+        <module>admin</module>
+        <module>agent</module>
+        <module>rabbitMQ</module>
+    </modules>
     <scm>
         <connection/>
         <developerConnection/>
@@ -49,7 +54,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${springboot.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

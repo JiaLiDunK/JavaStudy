@@ -7,34 +7,37 @@
         <artifactId>JavaStudy</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>rabbitMQ</artifactId>
+    <artifactId>agent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rabbitMQ</name>
+    <name>agent</name>
     <packaging>jar</packaging>
     <description>
-        rabbitMQ
+        agent
     </description>
-     <dependencies>
+    <properties>
+        <langchain4j.version>1.9.0</langchain4j.version>
+        <langgraph4j.version>1.7.4</langgraph4j.version>
+    </properties>
+    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j</artifactId>
+            <version>${langchain4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bsc.langgraph4j</groupId>
+            <artifactId>langgraph4j-core</artifactId>
+            <version>${langgraph4j.version}</version>
+        </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
 </project>
