@@ -3,7 +3,10 @@ package com.admin;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {
+        "com.admin",
+        "com.rabbitmq"
+})
 public class AdminApplication {
 
     public static void main(String[] args) {
