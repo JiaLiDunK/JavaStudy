@@ -12,7 +12,7 @@ import dev.langchain4j.model.openai.OpenAiChatModel;
 public class LangChain4jChatConfig {
     @Value("${tongyi.base-url}")
     private String baseUrl;
-    @Value("${tongyi.model:qwenPlus}")
+    @Value("${tongyi.model.qwenPlus}")
     private String model;
     @Value("${tongyi.api-key}")
     private String apiKey;
