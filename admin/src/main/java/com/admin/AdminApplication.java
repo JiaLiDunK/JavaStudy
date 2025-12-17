@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {
         "com.admin",
-        "com.rabbitmq"
+        "com.rabbitmq",
+        "com.agent"
 })
 public class AdminApplication {
 
